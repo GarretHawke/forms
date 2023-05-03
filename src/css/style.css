@@ -1,0 +1,74 @@
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showTooltip {
+  text-align: center;
+  user-select: none;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: .25rem;
+  border: none;
+  background-color: #a32e2e;
+  color: #fff;
+  position: relative;
+}
+
+.tooltip {
+  /* width: 360px; */
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  position: absolute;
+}
+
+.title {
+  background-color: #e5e5e5;
+  font-size: 0.9rem;
+  padding: .375rem .75rem;
+}
+
+.message {
+  font-size: 0.7rem;
+  padding: .375rem .75rem;
+}
+
+.tooltip__arrow {
+  background-color: #e5e5e5;
+  position: relative;
+  /* margin: auto; */
+}
+
+.tooltip__arrow::before,
+.tooltip__arrow::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  color: #ced4da;
+}
+
+.tooltip__arrow::before {
+  top: -0.5px;
+  border: 10px solid transparent;
+  border-top-color: var(--brdColor);
+}
+
+.tooltip__arrow::after {
+  top: -2.5px;
+  border: 9px solid transparent;
+  border-top-color: white;
+}
