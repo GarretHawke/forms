@@ -1,3 +1,9 @@
+@import './null.css';
+
+button {
+  position: relative;
+}
+
 .content {
   height: 100vh;
   display: flex;
@@ -22,14 +28,15 @@
   border: none;
   background-color: #a32e2e;
   color: #fff;
-  position: relative;
+}
+
+.tooltip__container {
+  position: absolute;
 }
 
 .tooltip {
-  /* width: 360px; */
   border: 1px solid #ced4da;
   border-radius: .25rem;
-  position: absolute;
 }
 
 .title {
@@ -44,9 +51,9 @@
 }
 
 .tooltip__arrow {
-  background-color: #e5e5e5;
   position: relative;
-  /* margin: auto; */
+  height: fit-content;
+  background-color: #e5e5e5;
 }
 
 .tooltip__arrow::before,
